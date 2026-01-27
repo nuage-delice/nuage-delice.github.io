@@ -18,7 +18,6 @@
     .menu {
       background: rgba(255, 255, 255, 0.9);
       padding: 15px 0;
-      text-align: center;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       position: sticky;
       top: 0;
@@ -33,39 +32,31 @@
       color: #e96fa3;
     }
 
-    .menu a:hover {
-      text-decoration: underline;
-    }
-
-    /* CONTENU PRINCIPAL */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px 20px 30px;
-}
-
-
-
-
-    /* LOGO */
-    .logo {
-      max-width: 180px;
-      display: block;
-      margin: 0 auto;
+    /* HERO */
+    .hero {
+      max-width: 900px;
+      margin: 40px auto 60px;
+      padding: 40px 30px 50px;
+      background: rgba(255,255,255,0.6);
+      border-radius: 40px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.06);
     }
 
     .logo-box {
-  background: white;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  margin-top: 15px;
-  margin-bottom: 25px;
-}
+      background: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+    }
 
+    .logo {
+      max-width: 180px;
+      display: block;
+    }
 
     h1 {
       color: #e96fa3;
@@ -79,39 +70,38 @@
       margin-bottom: 15px;
     }
 
-    <p class="tagline">
-  Animations gourmandes et conviviales pour petits et grands événements
-</p>
-
     .services {
       font-size: 1.2em;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
-
-    <a href="contact.html" class="cta-btn">Nous contacter</a>
 
     .zones {
       font-style: italic;
       margin-bottom: 15px;
     }
 
-    .contact {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
+    .tagline {
+      max-width: 600px;
+      margin: 8px auto 20px;
+      font-size: 1.05em;
+      line-height: 1.5;
+      color: #666;
+    }
+
+    .cta-btn {
       display: inline-block;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    }
-
-    a {
-      color: #e96fa3;
-      text-decoration: none;
+      padding: 10px 26px;
+      background: #e96fa3;
+      color: white;
+      border-radius: 30px;
       font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(233,111,163,0.3);
     }
 
-    /* BLOC PRESENTATION */
+    /* PRESENTATION */
     .about-section {
-      padding: 80px 20px;
+      padding: 60px 20px;
     }
 
     .about-content {
@@ -121,7 +111,6 @@
       border-radius: 30px;
       padding: 40px;
       display: flex;
-      align-items: center;
       gap: 40px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
@@ -131,129 +120,45 @@
       text-align: left;
     }
 
-    .about-text h3 {
-      color: #e96fa3;
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-
-    .about-text p {
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-
-    .about-image {
-      flex: 1;
-      text-align: center;
-    }
-
     .about-image img {
       max-width: 100%;
       border-radius: 20px;
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .about-content {
-        flex-direction: column;
-        text-align: center;
-      }
+    /* POURQUOI NOUS */
+    .why-section {
+      padding: 60px 20px;
+    }
 
-      .about-text {
-        text-align: center;
+    .why-cards {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      gap: 30px;
+    }
+
+    .why-card {
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      flex: 1;
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .about-content,
+      .why-cards {
+        flex-direction: column;
       }
     }
-    /* POURQUOI NOUS CHOISIR */
-.why-section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.why-section h3 {
-  color: #e96fa3;
-  font-size: 2.2em;
-  margin-bottom: 50px;
-}
-
-.why-cards {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  gap: 30px;
-}
-
-.why-card {
-  background: white;
-  padding: 30px;
-  border-radius: 25px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-  flex: 1;
-}
-
-.why-icon {
-  font-size: 2.5em;
-  display: block;
-  margin-bottom: 15px;
-}
-
-.why-card h4 {
-  color: #6ec1d1;
-  margin-bottom: 15px;
-}
-
-.why-card p {
-  line-height: 1.6;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .why-cards {
-    flex-direction: column;
-  }
-}
-/* MICRO PHRASE */
-/* MICRO PHRASE */
-.tagline {
-  max-width: 600px;
-  margin: 8px auto 20px;
-  font-size: 1.05em;
-  line-height: 1.5;
-  color: #666;
-}
-
-
-/* BOUTON CONTACT */
-.cta-btn {
-  display: inline-block;
-  margin-top: 5px;
-  padding: 10px 26px;
-  background: #e96fa3;
-  color: white;
-  border-radius: 30px;
-  font-weight: bold;
-  box-shadow: 0 8px 20px rgba(233,111,163,0.3);
-}
-
-
-.cta-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 25px rgba(233,111,163,0.4);
-}
-
-/* FOOTER */
-.footer {
-  margin-top: 60px;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #888;
-}
-.footer {
-  margin-top: 60px;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #888;
-}
-
   </style>
 </head>
 
@@ -264,8 +169,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="container">
-
+  <section class="hero">
     <div class="logo-box">
       <img src="Logo.png" alt="Nuage & Délice" class="logo">
     </div>
@@ -280,79 +184,32 @@
     <div class="zones">
       Tout événements, marchés, festival
     </div>
-   
+
     <p class="tagline">
-  Une animation sucrée qui fait la différence sur vos événements
-</p>
+      Une animation sucrée qui fait la différence sur vos événements
+    </p>
 
-<a href="contact.html" class="cta-btn">
-  Nous contacter
-</a>
+    <a href="contact.html" class="cta-btn">Nous contacter</a>
+  </section>
 
-    
-  </div>
-
-  <!-- BLOC PRESENTATION -->
-  <div class="about-section">
+  <section class="about-section">
     <div class="about-content">
-
       <div class="about-text">
         <h3>Une aventure gourmande et conviviale</h3>
         <p>
-          Derrière <strong>Nuage & Délice</strong>, Rico et Karine proposent des animations sucrées
-          alliant convivialité, gourmandise et professionnalisme.
-        </p>
-        <p>
-          Présents sur les marchés, festivals et événements, nous mettons un point d’honneur
-          à offrir un moment chaleureux et généreux, aussi bien pour les petits que pour les grands.
+          Derrière <strong>Nuage & Délice</strong>, Rico et Karine proposent
+          des animations sucrées alliant convivialité et professionnalisme.
         </p>
       </div>
-
       <div class="about-image">
-        <img src="presentation.jpg" alt="Rico et Karine – Nuage & Délice">
+        <img src="presentation.jpg" alt="Rico et Karine">
       </div>
-
     </div>
-  </div>
-<!-- POURQUOI NOUS CHOISIR -->
-<div class="why-section">
-  <h3>Pourquoi choisir Nuage & Délice ?</h3>
-
-  <div class="why-cards">
-
-    <div class="why-card">
-      <span class="why-icon">🍭</span>
-      <h4>Animations gourmandes</h4>
-      <p>
-        Des produits appréciés de tous, qui attirent le public et créent
-        une ambiance conviviale.
-      </p>
-    </div>
-
-    <div class="why-card">
-      <span class="why-icon">🎪</span>
-      <h4>Adapté à vos événements</h4>
-      <p>
-        Marchés, festivals, événements privés ou professionnels,
-        nous nous adaptons à chaque contexte.
-      </p>
-    </div>
-
-    <div class="why-card">
-      <span class="why-icon">😊</span>
-      <h4>Convivialité & sérieux</h4>
-      <p>
-        Une présence chaleureuse, professionnelle et respectueuse
-        de l’organisation de votre événement.
-      </p>
-    </div>
-
-  </div>
-</div>
+  </section>
 
   <footer class="footer">
-  <p>© 2026 – Nuage & Délice</p>
-</footer>
+    © 2026 – Nuage & Délice
+  </footer>
 
 </body>
 </html>
