@@ -14,37 +14,60 @@
       text-align: center;
     }
 
+    /* MENU */
+    .menu {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu a {
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #e96fa3;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTENU PRINCIPAL */
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 40px 20px;
     }
 
+    /* LOGO */
     .logo {
-  max-width: 180px;
-  display: block;
-  margin: 0 auto;
-}
+      max-width: 180px;
+      display: block;
+      margin: 0 auto;
+    }
 
+    .logo-box {
+      background: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
 
-.logo-box {
-  background: white;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-h1 {
-  color: #e96fa3;
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
+    h1 {
+      color: #e96fa3;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
 
     h2 {
       color: #6ec1d1;
@@ -75,40 +98,76 @@ h1 {
       text-decoration: none;
       font-weight: bold;
     }
-    .menu {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px 0;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
-.menu a {
-  margin: 0 20px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #e96fa3;
-}
+    /* BLOC PRESENTATION */
+    .about-section {
+      padding: 80px 20px;
+    }
 
-.menu a:hover {
-  text-decoration: underline;
-}
+    .about-content {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 30px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
 
+    .about-text {
+      flex: 1;
+      text-align: left;
+    }
+
+    .about-text h3 {
+      color: #e96fa3;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .about-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text {
+        text-align: center;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <nav class="menu">
     <a href="index.html">Accueil</a>
     <a href="contact.html">Contact</a>
   </nav>
-  
-  <div class="logo-box">
-  <img src="Logo.png" alt="Nuage & Délice" class="logo">
-</div>
+
+  <div class="container">
+
+    <div class="logo-box">
+      <img src="Logo.png" alt="Nuage & Délice" class="logo">
+    </div>
 
     <h1>Nuage & Délice</h1>
     <h2>Animations sucrées & gourmandes</h2>
@@ -125,6 +184,31 @@ h1 {
       📧 <a href="mailto:Nuagedelice.pro@gmail.com">Nuagedelice.pro@gmail.com</a><br><br>
       🌐 Nuage&delice.fr
     </div>
+
   </div>
+
+  <!-- BLOC PRESENTATION -->
+  <div class="about-section">
+    <div class="about-content">
+
+      <div class="about-text">
+        <h3>Une aventure gourmande et conviviale</h3>
+        <p>
+          Derrière <strong>Nuage & Délice</strong>, Rico et Karine proposent des animations sucrées
+          alliant convivialité, gourmandise et professionnalisme.
+        </p>
+        <p>
+          Présents sur les marchés, festivals et événements, nous mettons un point d’honneur
+          à offrir un moment chaleureux et généreux, aussi bien pour les petits que pour les grands.
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="presentation.jpg" alt="Rico et Karine – Nuage & Délice">
+      </div>
+
+    </div>
+  </div>
+
 </body>
 </html>
