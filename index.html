@@ -153,6 +153,55 @@
         text-align: center;
       }
     }
+    /* POURQUOI NOUS CHOISIR */
+.why-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.why-section h3 {
+  color: #e96fa3;
+  font-size: 2.2em;
+  margin-bottom: 50px;
+}
+
+.why-cards {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.why-card {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  flex: 1;
+}
+
+.why-icon {
+  font-size: 2.5em;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.why-card h4 {
+  color: #6ec1d1;
+  margin-bottom: 15px;
+}
+
+.why-card p {
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .why-cards {
+    flex-direction: column;
+  }
+}
+
   </style>
 </head>
 
@@ -204,6 +253,41 @@
 
     </div>
   </div>
+<!-- POURQUOI NOUS CHOISIR -->
+<div class="why-section">
+  <h3>Pourquoi choisir Nuage & Délice ?</h3>
+
+  <div class="why-cards">
+
+    <div class="why-card">
+      <span class="why-icon">🍭</span>
+      <h4>Animations gourmandes</h4>
+      <p>
+        Des produits appréciés de tous, qui attirent le public et créent
+        une ambiance conviviale.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-icon">🎪</span>
+      <h4>Adapté à vos événements</h4>
+      <p>
+        Marchés, festivals, événements privés ou professionnels,
+        nous nous adaptons à chaque contexte.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-icon">😊</span>
+      <h4>Convivialité & sérieux</h4>
+      <p>
+        Une présence chaleureuse, professionnelle et respectueuse
+        de l’organisation de votre événement.
+      </p>
+    </div>
+
+  </div>
+</div>
 
 </body>
 </html>
