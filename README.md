@@ -18,10 +18,5 @@ Barbe à papa • Glaces italiennes • Chichis • Bonbons
 Tout événements, marchés, festival
 </p>
 
-<p>
-📧 Nuagedelice.pro@gmail.com<br>
-🌐 Nuage&delice.fr
-</p>
-
 </body>
 </html>
