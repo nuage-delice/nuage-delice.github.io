@@ -38,11 +38,13 @@
     }
 
     /* CONTENU PRINCIPAL */
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 20px 40px;
+}
+
+
 
     /* LOGO */
     .logo {
@@ -59,8 +61,8 @@
       padding: 20px;
       border-radius: 20px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      margin-top: 30px;
-      margin-bottom: 40px;
+      margin-top: 20px;
+      margin-bottom: 25px;
     }
 
     h1 {
@@ -72,17 +74,23 @@
     h2 {
       color: #6ec1d1;
       font-weight: normal;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
+
+    <p class="tagline">
+  Animations gourmandes et conviviales pour petits et grands événements
+</p>
 
     .services {
       font-size: 1.2em;
       margin-bottom: 20px;
     }
 
+    <a href="contact.html" class="cta-btn">Nous contacter</a>
+
     .zones {
       font-style: italic;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
 
     .contact {
@@ -201,6 +209,44 @@
     flex-direction: column;
   }
 }
+/* MICRO PHRASE */
+.tagline {
+  font-size: 0.95em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* BOUTON CONTACT */
+.cta-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 28px;
+  background: #e96fa3;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(233,111,163,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(233,111,163,0.4);
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #888;
+}
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #888;
+}
 
   </style>
 </head>
@@ -288,6 +334,10 @@
 
   </div>
 </div>
+
+  <footer class="footer">
+  <p>© 2026 – Nuage & Délice</p>
+</footer>
 
 </body>
 </html>
