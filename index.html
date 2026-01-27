@@ -32,14 +32,11 @@
       color: #e96fa3;
     }
 
-    /* HERO */
-    .hero {
+    /* HERO / HAUT DE PAGE */
+    .container {
       max-width: 900px;
-      margin: 40px auto 60px;
-      padding: 40px 30px 50px;
-      background: rgba(255,255,255,0.6);
-      border-radius: 40px;
-      box-shadow: 0 25px 50px rgba(0,0,0,0.06);
+      margin: auto;
+      padding: 30px 20px 40px;
     }
 
     .logo-box {
@@ -67,12 +64,12 @@
     h2 {
       color: #6ec1d1;
       font-weight: normal;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .services {
-      font-size: 1.2em;
-      margin-bottom: 10px;
+      font-size: 1.1em;
+      margin-bottom: 5px;
     }
 
     .zones {
@@ -82,15 +79,14 @@
 
     .tagline {
       max-width: 600px;
-      margin: 8px auto 20px;
+      margin: 10px auto 20px;
       font-size: 1.05em;
-      line-height: 1.5;
       color: #666;
     }
 
     .cta-btn {
       display: inline-block;
-      padding: 10px 26px;
+      padding: 10px 28px;
       background: #e96fa3;
       color: white;
       border-radius: 30px;
@@ -99,20 +95,25 @@
       box-shadow: 0 8px 20px rgba(233,111,163,0.3);
     }
 
-    /* PRESENTATION */
-   .about-section {
-  padding: 40px 20px; /* avant : 80px */
-}
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px rgba(233,111,163,0.4);
+    }
 
+    /* PRESENTATION */
+    .about-section {
+      padding: 60px 20px;
+    }
 
     .about-content {
       max-width: 1000px;
       margin: auto;
       background: white;
       border-radius: 30px;
-      padding: 30px;
+      padding: 40px;
       display: flex;
-      gap: 30px;
+      gap: 40px;
+      align-items: center;
       box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
 
@@ -121,16 +122,35 @@
       text-align: left;
     }
 
-    .about-image img {
-  max-width: 420px;   /* ← taille maîtrisée */
-  width: 100%;
-  border-radius: 20px;
-}
+    .about-text h3 {
+      color: #e96fa3;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
 
+    .about-text p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .about-image {
+      flex: 1;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
 
     /* POURQUOI NOUS */
     .why-section {
       padding: 60px 20px;
+    }
+
+    .why-section h3 {
+      color: #e96fa3;
+      font-size: 2.2em;
+      margin-bottom: 40px;
     }
 
     .why-cards {
@@ -148,18 +168,34 @@
       flex: 1;
     }
 
+    .why-icon {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .why-card h4 {
+      color: #6ec1d1;
+      margin-bottom: 10px;
+    }
+
     /* FOOTER */
-    .footer {
+    footer {
       margin-top: 60px;
       padding: 20px;
       font-size: 0.9em;
       color: #888;
     }
 
+    /* RESPONSIVE */
     @media (max-width: 768px) {
       .about-content,
       .why-cards {
         flex-direction: column;
+      }
+
+      .about-text {
+        text-align: center;
       }
     }
   </style>
@@ -172,7 +208,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section class="hero">
+  <div class="container">
     <div class="logo-box">
       <img src="Logo.png" alt="Nuage & Délice" class="logo">
     </div>
@@ -193,24 +229,53 @@
     </p>
 
     <a href="contact.html" class="cta-btn">Nous contacter</a>
-  </section>
+  </div>
 
-  <section class="about-section">
+  <div class="about-section">
     <div class="about-content">
       <div class="about-text">
         <h3>Une aventure gourmande et conviviale</h3>
         <p>
-          Derrière <strong>Nuage & Délice</strong>, Rico et Karine proposent
-          des animations sucrées alliant convivialité et professionnalisme.
+          Derrière <strong>Nuage & Délice</strong>, Rico et Karine proposent des animations
+          sucrées alliant convivialité et professionnalisme.
+        </p>
+        <p>
+          Présents sur les marchés, festivals et événements, nous créons
+          des moments chaleureux pour petits et grands.
         </p>
       </div>
+
       <div class="about-image">
-        <img src="presentation.jpg" alt="Rico et Karine">
+        <img src="presentation.jpg" alt="Nuage & Délice">
       </div>
     </div>
-  </section>
+  </div>
 
-  <footer class="footer">
+  <div class="why-section">
+    <h3>Pourquoi choisir Nuage & Délice ?</h3>
+
+    <div class="why-cards">
+      <div class="why-card">
+        <span class="why-icon">🍭</span>
+        <h4>Gourmandise</h4>
+        <p>Des produits qui plaisent à tous et attirent le public.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="why-icon">🎪</span>
+        <h4>Flexibilité</h4>
+        <p>Marchés, festivals ou événements privés, on s’adapte.</p>
+      </div>
+
+      <div class="why-card">
+        <span class="why-icon">😊</span>
+        <h4>Convivialité</h4>
+        <p>Une présence chaleureuse et professionnelle.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
     © 2026 – Nuage & Délice
   </footer>
 
