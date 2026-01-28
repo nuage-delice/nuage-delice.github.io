@@ -12,7 +12,6 @@
       background: linear-gradient(180deg, #fde7f3, #e6f7fb);
       color: #444;
       text-align: center;
-
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -22,7 +21,6 @@
     .menu {
       background: rgba(255, 255, 255, 0.9);
       padding: 15px 0;
-      text-align: center;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       position: sticky;
       top: 0;
@@ -41,34 +39,38 @@
       text-decoration: underline;
     }
 
-    /* CONTENU */
-    <div class="hero">
-  <div class="container fade-in">
+    /* HERO */
+    .hero {
+      padding: 80px 20px 60px;
+      flex: 1;
+    }
 
-    <h1>Contact</h1>
-    <h2>Nuage & Délice</h2>
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-    <p class="contact-intro">
-      Un projet, une question ou un événement à venir ?  
-      Nous sommes à votre écoute.
-    </p>
+    h1 {
+      color: #e96fa3;
+      font-size: 2.6em;
+      margin-bottom: 10px;
+    }
 
-    <div class="contact-box">
-      <p>📧 <a href="mailto:Nuagedelice.pro@gmail.com">Nuagedelice.pro@gmail.com</a></p>
-      <p>📞 Rico : <a href="tel:+33632439369">06 32 43 93 69</a></p>
-      <p>📞 Karine : <a href="tel:+33626343198">06 26 34 31 98</a></p>
-      <p>🌍 Tout événements, marchés, festivals</p>
+    h2 {
+      color: #6ec1d1;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
 
-      <p class="contact-note">
-        Réponse rapide • Devis sur demande
-      </p>
-    </div>
+    .contact-intro {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      font-size: 1.05em;
+      color: #666;
+    }
 
-  </div>
-</div>
-
-
-    /* BOX CONTACT */
+    /* CONTACT BOX */
     .contact-box {
       background: white;
       padding: 35px 40px;
@@ -86,6 +88,13 @@
       gap: 10px;
     }
 
+    .contact-note {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #888;
+      text-align: center;
+    }
+
     a {
       color: #e96fa3;
       text-decoration: none;
@@ -94,48 +103,27 @@
 
     /* FOOTER */
     .footer {
-  margin-top: 80px;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-.footer .brand {
-  color: #e96fa3;
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-bottom: 5px;
-}
-
-.footer .tagline {
-  color: #444;
-  font-size: 0.95em;
-  margin-bottom: 8px;
-}
-
-.footer .copyright {
-  color: #888;
-  font-size: 0.85em;
-}
-margin-bottom: 40px;
+      padding: 30px 20px;
+      text-align: center;
     }
-.hero {
-  padding: 80px 20px 60px;
-}
 
-.contact-intro {
-  max-width: 600px;
-  margin: 0 auto 40px;
-  font-size: 1.05em;
-  color: #666;
-}
+    .footer .brand {
+      color: #e96fa3;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
 
-.contact-note {
-  margin-top: 20px;
-  font-size: 0.9em;
-  color: #888;
-  text-align: center;
-}
+    .footer .tagline {
+      font-size: 0.95em;
+      color: #444;
+      margin-bottom: 8px;
+    }
 
+    .footer .copyright {
+      font-size: 0.85em;
+      color: #888;
+    }
   </style>
 </head>
 
@@ -146,25 +134,34 @@ margin-bottom: 40px;
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="container">
-    <h1>Contact</h1>
-    <h2>Nuage & Délice</h2>
+  <section class="hero">
+    <div class="container">
+      <h1>Contact</h1>
+      <h2>Nuage & Délice</h2>
 
-    <div class="contact-box">
-      <p>📧 <a href="mailto:Nuagedelice.pro@gmail.com">Nuagedelice.pro@gmail.com</a></p>
-      <p>📞 Rico : <a href="tel:+33632439369">06 32 43 93 69</a></p>
-      <p>📞 Karine : <a href="tel:+33626343198">06 26 34 31 98</a></p>
-      <p>🌍 Tout événements, marchés, festival</p>
+      <p class="contact-intro">
+        Un projet, une question ou un événement à venir ?  
+        Nous sommes à votre écoute.
+      </p>
+
+      <div class="contact-box">
+        <p>📧 <a href="mailto:Nuagedelice.pro@gmail.com">Nuagedelice.pro@gmail.com</a></p>
+        <p>📞 Rico : <a href="tel:+33632439369">06 32 43 93 69</a></p>
+        <p>📞 Karine : <a href="tel:+33626343198">06 26 34 31 98</a></p>
+        <p>🌍 Tout événements, marchés, festivals</p>
+
+        <p class="contact-note">
+          Réponse rapide • Devis sur demande
+        </p>
+      </div>
     </div>
-  </div>
+  </section>
 
- <footer class="footer">
-  <div class="brand">Nuage & Délice</div>
-  <div class="tagline">Animations sucrées & gourmandes</div>
-  <div class="copyright">© 2026 – Tous droits réservés</div>
-</footer>
-
-
+  <footer class="footer">
+    <div class="brand">Nuage & Délice</div>
+    <div class="tagline">Animations sucrées & gourmandes</div>
+    <div class="copyright">© 2026 – Tous droits réservés</div>
+  </footer>
 
 </body>
 </html>
