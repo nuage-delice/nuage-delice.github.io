@@ -12,45 +12,72 @@
       background: linear-gradient(180deg, #fde7f3, #e6f7fb);
       color: #444;
       text-align: center;
+
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
+    /* MENU */
+    .menu {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu a {
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #e96fa3;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTENU */
     .container {
       max-width: 800px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 40px 20px;
+      flex: 1;
     }
 
     h1 {
-  color: #e96fa3;
-  font-size: 2.6em;
-  margin-bottom: 10px;
-}
+      color: #e96fa3;
+      font-size: 2.6em;
+      margin-bottom: 10px;
+    }
 
-h2 {
-  color: #6ec1d1;
-  font-weight: normal;
-  margin-bottom: 50px;
-}
+    h2 {
+      color: #6ec1d1;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
 
+    /* BOX CONTACT */
+    .contact-box {
+      background: white;
+      padding: 35px 40px;
+      border-radius: 25px;
+      display: inline-block;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+      font-size: 1.05em;
+      text-align: left;
+    }
 
-   .contact-box {
-  background: white;
-  padding: 35px 40px;
-  border-radius: 25px;
-  display: inline-block;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  font-size: 1.05em;
-  text-align: left;
-}
-
-
-   .contact-box p {
-  margin: 18px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
+    .contact-box p {
+      margin: 18px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
     a {
       color: #e96fa3;
@@ -58,51 +85,22 @@ h2 {
       font-weight: bold;
     }
 
-    .back {
-      margin-top: 40px;
-      display: inline-block;
+    /* FOOTER */
+    .footer {
+      padding: 25px 20px;
+      font-size: 0.9em;
+      color: #888;
+      text-align: center;
     }
-    .back {
-  margin-top: 40px;
-  text-align: center;
-}
-.menu {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px 0;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.menu a {
-  margin: 0 20px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #e96fa3;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-}
-.footer {
-  margin-top: 80px;
-  padding: 25px 20px;
-  font-size: 0.9em;
-  color: #888;
-  text-align: center;
-}
-
   </style>
 </head>
 
 <body>
+
   <nav class="menu">
-  <a href="index.html">Accueil</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <a href="index.html">Accueil</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
   <div class="container">
     <h1>Contact</h1>
@@ -110,18 +108,15 @@ h2 {
 
     <div class="contact-box">
       <p>📧 <a href="mailto:Nuagedelice.pro@gmail.com">Nuagedelice.pro@gmail.com</a></p>
-     <p>📞 Rico : <a href="tel:+33632439369">06 32 43 93 69</a></p>
-<p>📞 Karine : <a href="tel:+33626343198">06 26 34 31 98</a></p>
-
+      <p>📞 Rico : <a href="tel:+33632439369">06 32 43 93 69</a></p>
+      <p>📞 Karine : <a href="tel:+33626343198">06 26 34 31 98</a></p>
       <p>🌍 Tout événements, marchés, festival</p>
     </div>
-
-    
-
   </div>
+
   <footer class="footer">
-  <p>© 2026 – Nuage & Délice</p>
-</footer>
+    <p>© 2026 – Nuage & Délice</p>
+  </footer>
 
 </body>
 </html>
