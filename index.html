@@ -243,6 +243,20 @@
   font-size: 0.85em;
   color: #999;
 }
+.fade-in {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
   </style>
 </head>
@@ -255,7 +269,7 @@
   </nav>
 
   <div class="hero">
-  <div class="container">
+  <div class="container fade-in">
     <div class="logo-box">
       <img src="Logo.png" alt="Nuage & Délice" class="logo">
     </div>
@@ -299,34 +313,33 @@
     </div>
   </div>
 
-  <div class="why-section">
-    <h3>Pourquoi choisir Nuage & Délice ?</h3>
-   
-    <p class="why-intro">
-  Une animation sucrée pensée pour créer du lien et marquer les esprits.
-</p>
+ <div class="why-section fade-in">
+  <h3>Pourquoi choisir Nuage & Délice ?</h3>
 
+  <p class="why-intro">
+    Une animation sucrée pensée pour créer du lien et marquer les esprits.
+  </p>
 
-    <div class="why-cards">
-      <div class="why-card">
-        <span class="why-icon">🍭</span>
-        <h4>Gourmandise</h4>
-        <p>Des produits qui plaisent à tous et attirent le public.</p>
-      </div>
+  <div class="why-cards">
+    <div class="why-card">
+      <span class="why-icon">🍭</span>
+      <h4>Gourmandise</h4>
+      <p>Des produits qui plaisent à tous et attirent le public.</p>
+    </div>
 
-      <div class="why-card">
-        <span class="why-icon">🎪</span>
-        <h4>Flexibilité</h4>
-        <p>Marchés, festivals ou événements privés, on s’adapte.</p>
-      </div>
+    <div class="why-card">
+      <span class="why-icon">🎪</span>
+      <h4>Flexibilité</h4>
+      <p>Marchés, festivals ou événements privés, on s’adapte.</p>
+    </div>
 
-      <div class="why-card">
-        <span class="why-icon">😊</span>
-        <h4>Convivialité</h4>
-        <p>Une présence chaleureuse et professionnelle.</p>
-      </div>
+    <div class="why-card">
+      <span class="why-icon">😊</span>
+      <h4>Convivialité</h4>
+      <p>Une présence chaleureuse et professionnelle.</p>
     </div>
   </div>
+</div>
 
   <footer class="footer">
   <p class="footer-title">Nuage & Délice</p>
