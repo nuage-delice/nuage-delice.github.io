@@ -124,6 +124,51 @@
       font-size: 0.85em;
       color: #888;
     }
+    /* FAQ */
+.faq-section {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.faq-section h3 {
+  text-align: center;
+  color: #e96fa3;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 20px;
+  padding: 18px 22px;
+  margin-bottom: 15px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.faq-item summary {
+  font-weight: bold;
+  font-size: 1.05em;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.faq-item[open] {
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
   </style>
 </head>
 
@@ -159,38 +204,39 @@
   <section class="faq-section">
   <h3>Questions fréquentes</h3>
 
-  <div class="faq-item">
-    <h4>⏱ En combien de temps répondons-nous ?</h4>
+  <details class="faq-item">
+    <summary>⏱ En combien de temps répondons-nous ?</summary>
     <p>
       Nous répondons généralement sous <strong>24 à 48 heures</strong>,
       souvent plus rapidement selon la période.
     </p>
-  </div>
+  </details>
 
-  <div class="faq-item">
-    <h4>🚚 Dans quelles zones nous déplaçons-nous ?</h4>
+  <details class="faq-item">
+    <summary>🚚 Dans quelles zones nous déplaçons-nous ?</summary>
     <p>
       Nous nous déplaçons pour <strong>tout événements, marchés et festivals</strong>.
       Contactez-nous pour vérifier la faisabilité selon votre lieu.
     </p>
-  </div>
+  </details>
 
-  <div class="faq-item">
-    <h4>🎉 Pour quels types d’événements ?</h4>
+  <details class="faq-item">
+    <summary>🎉 Pour quels types d’événements ?</summary>
     <p>
-      Événements privés, professionnels, marchés, fêtes locales
-      et festivals.
+      Événements privés, professionnels, marchés,
+      fêtes locales et festivals.
     </p>
-  </div>
+  </details>
 
-  <div class="faq-item">
-    <h4>💬 Comment se passe un devis ?</h4>
+  <details class="faq-item">
+    <summary>💬 Comment se passe un devis ?</summary>
     <p>
       Le devis est <strong>gratuit et sans engagement</strong>,
       établi selon votre événement.
     </p>
-  </div>
+  </details>
 </section>
+
 
 
   <footer class="footer">
